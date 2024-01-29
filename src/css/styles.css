@@ -28,4 +28,51 @@
   gap: 24px;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
+}
+
+.feedback-form {
+  padding: 24px;
+}
+
+.feedback-form > label {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.04em;
+}
+
+input,
+textarea {
+  width: 360px;
+  height: 40px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+button {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.04em;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  margin-top: 8px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6c8cff;
 }
