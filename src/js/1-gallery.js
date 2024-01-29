@@ -88,7 +88,7 @@ import SimpleLightbox from 'simplelightbox';
 // Додатковий імпорт стилів
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
-const galleryOptions = {
+const modalOptions = {
   caption: true,
   captionSelector: 'img',
   captionType: 'attr',
@@ -97,10 +97,5 @@ const galleryOptions = {
   captionDelay: '250',
 };
 
-let modal = new SimpleLightbox('.gallery a', galleryOptions);
-modal.on('show.simplelightbox', function () {
-  // Do something…
-});
-modal.on('error.simplelightbox', function (e) {
-  console.log(e); // Some usefull information
-});
+let modal = new SimpleLightbox('.gallery a', modalOptions);
+modal.on('show.simplelightbox', function () {});
