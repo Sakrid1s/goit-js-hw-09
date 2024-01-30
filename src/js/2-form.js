@@ -14,17 +14,17 @@ function fromLocalStorage(key) {
 
 const feedbackForm = document.querySelector('.feedback-form');
 
-feedbackForm.addEventListener('input', onInputMessage);
+feedbackForm.addEventListener('input', handleFormInput);
 const feedbackFormKey = 'feedback-form-state';
 
-function onInputMessage() {
-  const email = feedbackForm.elements.email.value;
-  const message = feedbackForm.elements.message.value;
-  const formValues = {
+function handleFormInput() {
+  const email = feedbackForm.elements.email.value.trim();
+  const message = feedbackForm.elements.message.value.trim();
+  const formData = {
     email,
     message,
   };
-  toLocalStorage(feedbackFormKey, formValues);
+  toLocalStorage(feedbackFormKey, formData);
 }
 
 function localFormValues() {
@@ -39,8 +39,8 @@ feedbackForm.addEventListener('submit', onFormSubmit);
 
 function onFormSubmit(event) {
   event.preventDefault();
-  const email = feedbackForm.elements.email.value;
-  const message = feedbackForm.elements.message.value;
+  const email = feedbackForm.elements.email.value.trim();
+  const message = feedbackForm.elements.message.value.trim();
   if (email === '' || message === '') {
     return alert('All form fields must be filled in');
   }

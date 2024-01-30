@@ -1,3 +1,6 @@
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
+
 const images = [
   {
     preview:
@@ -83,19 +86,11 @@ function galleryMarkup() {
 
 galleryMarkup();
 
-// Імпорт бібліотеки
-import SimpleLightbox from 'simplelightbox';
-// Додатковий імпорт стилів
-import 'simplelightbox/dist/simple-lightbox.min.css';
-
 const modalOptions = {
   caption: true,
-  captionSelector: 'img',
-  captionType: 'attr',
   captionsData: 'alt',
-  captionPosition: 'bottom',
-  captionDelay: '250',
+  captionDelay: 250,
 };
 
 let modal = new SimpleLightbox('.gallery a', modalOptions);
-modal.on('show.simplelightbox', function () {});
+modal.on('show.simplelightbox');

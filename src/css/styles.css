@@ -76,3 +76,16 @@ button {
 button:hover {
   background-color: #6c8cff;
 }
+
+.nav-list {
+  padding: 30px;
+}
+
+.nav-item {
+  margin-bottom: 10px;
+}
+
+.nav-link {
+  color: #4e75ff;
+  font-size: 20px;
+}
