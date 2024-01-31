@@ -87,10 +87,9 @@ function galleryMarkup() {
 galleryMarkup();
 
 const modalOptions = {
-  caption: true,
   captionsData: 'alt',
   captionDelay: 250,
 };
 
 let modal = new SimpleLightbox('.gallery a', modalOptions);
-modal.on('show.simplelightbox');
+modal.on();
