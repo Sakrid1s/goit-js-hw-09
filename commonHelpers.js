@@ -3,5 +3,5 @@ import"./assets/modulepreload-polyfill-ec808ebb.js";/* empty css                
   <a class="gallery-link" href="${a}">
     <img class="gallery-image" src="${p}" alt="${i}"/>
   </a>
-</li>`).join("");n.innerHTML=o}c();const s={caption:!0,captionsData:"alt",captionDelay:250};let r=new t(".gallery a",s);r.on("show.simplelightbox");
+</li>`).join("");n.innerHTML=o}c();const s={captionsData:"alt",captionDelay:250};let r=new t(".gallery a",s);r.on();
 //# sourceMappingURL=commonHelpers.js.map
