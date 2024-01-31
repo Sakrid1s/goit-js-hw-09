@@ -92,4 +92,6 @@ const modalOptions = {
 };
 
 let modal = new SimpleLightbox('.gallery a', modalOptions);
-modal.on();
+modal.on('error.simplelightbox', function (e) {
+  console.log(e);
+});
