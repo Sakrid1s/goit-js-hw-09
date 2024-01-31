@@ -91,7 +91,4 @@ const modalOptions = {
   captionDelay: 250,
 };
 
-let modal = new SimpleLightbox('.gallery a', modalOptions);
-modal.on('error.simplelightbox', function (e) {
-  console.log(e);
-});
+const modal = new SimpleLightbox('.gallery a', modalOptions);
